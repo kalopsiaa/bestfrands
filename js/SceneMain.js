@@ -12,6 +12,7 @@ class SceneMain extends Phaser.Scene {
       frameWidth: 16,
       frameHeight: 16
     });
+    // w 263 * h 247
     this.load.image("sprEnemy1", "content/sprEnemy1.png");
     this.load.spritesheet("sprEnemy2", "content/sprEnemy2.png", {
       frameWidth: 16,
