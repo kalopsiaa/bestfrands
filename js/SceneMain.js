@@ -8,9 +8,9 @@ class SceneMain extends Phaser.Scene {
       frameWidth: 32,
       frameHeight: 32
     });
-    this.load.spritesheet("sprEnemy0", "content/sprEnemy0.png", {
-      frameWidth: 16,
-      frameHeight: 16
+    this.load.spritesheet("sprEnemy0", "content/meg.jpg", {
+      frameWidth: 50,
+      frameHeight: 50
     });
     this.load.image("sprEnemy1", "content/sprEnemy1.png");
     // this.load.image("sprEnemy2", "content/khushi.jpg");
