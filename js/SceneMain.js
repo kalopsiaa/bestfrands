@@ -8,12 +8,13 @@ class SceneMain extends Phaser.Scene {
       frameWidth: 32,
       frameHeight: 32
     });
-    this.load.spritesheet("sprEnemy0", "content/meg.jpg", {
+    this.load.spritesheet("sprEnemy0", "content/khushi.jpg", {
       frameWidth: 50,
       frameHeight: 50
     });
     this.load.image("sprEnemy1", "content/anmol.jpg");
-    this.load.spritesheet("sprEnemy2", "content/khushi.jpg", {
+    this.load.image("sprEnemy3", "content/mariam.jpg");
+    this.load.spritesheet("sprEnemy2", "content/meg.jpg", {
       frameWidth: 50,
       frameHeight: 50
     });
@@ -92,25 +93,34 @@ class SceneMain extends Phaser.Scene {
       callback: function() {
         var enemy = null;
 
-        if (Phaser.Math.Between(0, 10) >= 3) {
+        let randomUnit = Phaser.Math.Between(0, 8);
+        // if (Phaser.Math.Between(0, 10) >= 3) {
+        if (randomUnit < 2) {
           enemy = new GunShip(
             this,
             Phaser.Math.Between(0, this.game.config.width),
             0
           );
         }
-        else if (Phaser.Math.Between(0, 10) >= 5) {
-          if (this.getEnemiesByType("ChaserShip").length < 5) {
-    
+        // else if (Phaser.Math.Between(0, 10) >= 5) {
+        else if (randomUnit < 4) {
+          // if () {
             enemy = new ChaserShip(
               this,
               Phaser.Math.Between(0, this.game.config.width),
               0
             );
-          }
+          // }
         }
-        else {
+        else if (randomUnit < 6) {
           enemy = new CarrierShip(
+            this,
+            Phaser.Math.Between(0, this.game.config.width),
+            0
+          );
+        // }
+        } else {
+          enemy = new ChaserShip2(
             this,
             Phaser.Math.Between(0, this.game.config.width),
             0

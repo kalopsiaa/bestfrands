@@ -18,5 +18,4 @@ var config = {
   roundPixels: true
 };
 
-// console.log(inputFace.value);
 var game = new Phaser.Game(config);
