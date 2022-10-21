@@ -13,10 +13,11 @@ class SceneMain extends Phaser.Scene {
       frameHeight: 16
     });
     this.load.image("sprEnemy1", "content/sprEnemy1.png");
-    this.load.spritesheet("sprEnemy2", "content/sprEnemy2.png", {
-      frameWidth: 16,
-      frameHeight: 16
-    });
+    this.load.image("sprEnemy2", "content/khushi.jpg");
+    // this.load.spritesheet("sprEnemy2", "content/khushi.jpg", {
+    //   frameWidth: 16,
+    //   frameHeight: 16
+    // });
     this.load.image("sprLaserEnemy0", "content/sprLaserEnemy0.png");
     this.load.image("sprLaserPlayer", "content/sprLaserPlayer.png");
     this.load.spritesheet("sprPlayer", "content/sprPlayer.png", {
@@ -36,12 +37,12 @@ class SceneMain extends Phaser.Scene {
       frameRate: 20,
       repeat: -1
     });
-    this.anims.create({
-      key: "sprEnemy2",
-      frames: this.anims.generateFrameNumbers("sprEnemy2"),
-      frameRate: 20,
-      repeat: -1
-    });
+    // this.anims.create({
+    //   key: "sprEnemy2",
+    //   frames: this.anims.generateFrameNumbers("sprEnemy2"),
+    //   frameRate: 20,
+    //   repeat: -1
+    // });
     this.anims.create({
       key: "sprExplosion",
       frames: this.anims.generateFrameNumbers("sprExplosion"),
