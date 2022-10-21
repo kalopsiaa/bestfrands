@@ -5,8 +5,43 @@
     <meta lang="en-us">
     <title>Space Shooter</title>
     <script src="js/phaser.js"></script> <!-- the file name should be the same as the Phaser script you added. -->
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      canvas {
+        /* width: 100%; */
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
+    <!-- <div class="form">
+
+    </div> -->
+    <!-- <form action="" enctype="multipart/form-data" method="post"> -->
+
+      <label for="file">Upload Your Face</label>
+      <input id="inputFace" type="file" accept="image/jpeg, image/gif, image/png" name="fileToUpload" />
+      <!-- <button class="btn btn-success" name="submit" type="submit" onclick="printFaceFile()"> Upload File </button> -->
+    <!-- </form> -->
+
+    <script>
+      let inputFace = document.getElementById('inputFace');
+      // console.log(inputFace.value);
+      // function printFaceFile() {
+      //   inputFace = "content/sprEnemy1.png";
+      // }
+    </script>
     <script src="js/Entities.js"></script>
     <script src="js/SceneMainMenu.js"></script>
     <script src="js/SceneMain.js"></script>
