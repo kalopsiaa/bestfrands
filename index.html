@@ -31,11 +31,17 @@
     <!-- <form action="" enctype="multipart/form-data" method="post"> -->
 
       <label for="file">Upload Your Face</label>
-      <input type="file" accept="image/jpeg, image/gif, image/png" name="fileToUpload" />
-
-      <!-- <button class="btn btn-success" name="submit" type="submit"> Upload File </button> -->
+      <input id="inputFace" type="file" accept="image/jpeg, image/gif, image/png" name="fileToUpload" />
+      <!-- <button class="btn btn-success" name="submit" type="submit" onclick="printFaceFile()"> Upload File </button> -->
     <!-- </form> -->
 
+    <script>
+      let inputFace = document.getElementById('inputFace');
+      // console.log(inputFace.value);
+      // function printFaceFile() {
+      //   inputFace = "content/sprEnemy1.png";
+      // }
+    </script>
     <script src="js/Entities.js"></script>
     <script src="js/SceneMainMenu.js"></script>
     <script src="js/SceneMain.js"></script>

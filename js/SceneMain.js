@@ -13,7 +13,10 @@ class SceneMain extends Phaser.Scene {
       frameHeight: 16
     });
     // w 263 * h 247
-    this.load.image("sprEnemy1", "content/sprEnemy1.png");
+    // this.load.image("sprEnemy1", "content/sprEnemy1.png");
+    // this.load.image("sprEnemy1", inputFace.value);
+    this.load.image("sprEnemy1", inputFace);
+    // console.log(inputFace.value);
     this.load.spritesheet("sprEnemy2", "content/sprEnemy2.png", {
       frameWidth: 16,
       frameHeight: 16
@@ -76,7 +79,7 @@ class SceneMain extends Phaser.Scene {
       this.game.config.height * 0.5,
       "sprPlayer"
     );
-    console.log(this.player);
+    // console.log(this.player);
 
     this.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
     this.keyS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
