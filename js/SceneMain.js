@@ -12,14 +12,11 @@ class SceneMain extends Phaser.Scene {
       frameWidth: 16,
       frameHeight: 16
     });
-    // w 263 * h 247
-    // this.load.image("sprEnemy1", "content/sprEnemy1.png");
-    // this.load.image("sprEnemy1", inputFace.value);
-    this.load.image("sprEnemy1", inputFace);
-    // console.log(inputFace.value);
-    this.load.spritesheet("sprEnemy2", "content/sprEnemy2.png", {
-      frameWidth: 16,
-      frameHeight: 16
+    this.load.image("sprEnemy1", "content/sprEnemy1.png");
+    // this.load.image("sprEnemy2", "content/khushi.jpg");
+    this.load.spritesheet("sprEnemy2", "content/khushi.jpg", {
+      frameWidth: 50,
+      frameHeight: 50
     });
     this.load.image("sprLaserEnemy0", "content/sprLaserEnemy0.png");
     this.load.image("sprLaserPlayer", "content/sprLaserPlayer.png");
